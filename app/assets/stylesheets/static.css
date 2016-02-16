@@ -1,0 +1,12 @@
+
+#contact {
+  background-image: url('https://static.pexels.com/photos/38132/pexels-photo-38132-medium.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+#contact h1 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
