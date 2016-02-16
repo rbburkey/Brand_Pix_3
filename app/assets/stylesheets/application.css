@@ -72,6 +72,15 @@
      background: #eee;
  }
 
- #page-top {
+
+ #banner_color.navbar.navbar-default.navbar-fixed-top {
    background-color: #16174f;
  }
+
+.navbar-default .navbar-brand {
+  color: #6092FF;
+}
+
+.log_in_out {
+  padding-left: 990px;
+}
