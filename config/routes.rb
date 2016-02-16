@@ -7,7 +7,15 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  get 'home' => "static#home"
+  root to: 'static#home'
+  get 'home' => 'static#home'
+
+  # devise routes
+  devise_scope :user do
+  get '/users/sign_out' => 'devise/sessions#destroy'
+end
+
+
 
   get 'companies/:id' => 'companies#show'
   get 'companies/:id' => 'designs#create'
