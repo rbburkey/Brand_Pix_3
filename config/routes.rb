@@ -13,6 +13,21 @@ Rails.application.routes.draw do
   # devise routes
   devise_scope :user do
   get '/users/sign_out' => 'devise/sessions#destroy'
+  get    '/users/sign_in'  => 'devise/sessions#new'
+  post '/users/sign_in' => 'devise/sessions#create'
+  delete '/users/sign_out' =>'devise/sessions#destroy'
+  post   '/users/password' => 'devise/passwords#create'
+  get '/users/password/new' => 'devise/passwords#new'
+  get '/users/password/edit' 'devise/passwords#edit'
+  patch '/users/password' => 'devise/passwords#update'
+  put '/users/password' => 'devise/passwords#update'
+  get  '/users/cancel' => 'devise/registrations#cancel'
+  post '/users(.:format)' => 'devise/registrations#create'
+  get  '/users/sign_up' => 'devise/registrations#new'
+  patch  '/users' => 'devise/registrations#update'
+  put '/users(.:format)' => 'devise/registrations#update'
+
+
 end
 
 
