@@ -18,6 +18,7 @@ Rails.application.routes.draw do
 
   get 'designs/:id' => 'designs#show'
   get 'designs' => 'designs#index'
+  get 'designs/new' => 'designs#create'
 
 
   get 'reviews' => 'reviews#index'
