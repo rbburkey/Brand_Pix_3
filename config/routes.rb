@@ -14,10 +14,10 @@ Rails.application.routes.draw do
   root to: 'static#home'
   get 'home' => 'static#home'
 
-  devise routes
+  # devise routes
   devise_scope :user do
   get '/users/sign_out' => 'devise/sessions#destroy'
-  get    '/users/sign_in'  => 'devise/sessions#new'
+  get '/users/sign_in'  => 'devise/sessions#new'
   get '/users/password/new' => 'devise/passwords#new'
 
 end
