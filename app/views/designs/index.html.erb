@@ -4,6 +4,9 @@
 
 <table>
   <thead>
+    <th>Image</th>
+     <th>Name</th>
+     <th>Description</th>
     <tr>
       <th>Product name</th>
       <th>Description</th>
@@ -13,6 +16,11 @@
 
   <tbody>
     <% @designs.each do |design| %>
+    <%= image_tag @design.image.url(:large) %>
+       <td><%= image_tag design.image.url(:thumb) %></td>
+       <td><%= design.product_name %></td>
+       <td><%= design.company_id %></td>
+       <td><%= design.description %></td>
       <tr>
         <td><%= design.product_name %></td>
         <td><%= design.description %></td>
