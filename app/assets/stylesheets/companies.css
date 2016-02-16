@@ -3,20 +3,19 @@
   They will automatically be included in application.css.
 */
 
+.company_option th {
+  /*border-right: 1px solid #C1DAD7;
+  border-bottom: 1px solid #C1DAD7;
+  border-top: 1px solid #C1DAD7;
+  border-left: 1px solid #C1DAD7;*/
+  background: 1px solid #6e6e6c;
+  padding: 6px 6px 6px 0px;
+  color: #6092FF;
+}
 
-.design_container {
+.new_company {
   align-items: center;
-  padding-top: 200px;
+  padding-top: 150px;
   width: 70%;
   margin: 0 auto;
 }
-
-.show {
-   border-right: 1px solid #C1DAD7;
-   border-bottom: 1px solid #C1DAD7;
-   border-top: 1px solid #C1DAD7;
-   border-left: 1px solid #C1DAD7;
-   background: 1px solid #6e6e6c;
-   padding: 6px 6px 6px 12px;
-   color: #6092FF;
- }

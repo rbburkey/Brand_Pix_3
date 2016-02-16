@@ -1,5 +1,8 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: [:show, :edit, :update, :destroy]
+  # before_action :companyz, except [: ]
+  #authenticate that is a company
+
 
   # GET /reviews
   # GET /reviews.json
@@ -19,6 +22,10 @@ class ReviewsController < ApplicationController
 
   # GET /reviews/1/edit
   def edit
+  end
+
+  def companyz
+
   end
 
   # POST /reviews
