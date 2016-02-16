@@ -10,13 +10,13 @@ Rails.application.routes.draw do
   get 'home' => "static#home"
 
   get 'companies/:id' => 'companies#show'
+  get 'companies/:id' => 'designs#create'
   get 'companies/new' => 'companies#create'
   get 'companies/:id/edit' => 'companies#edit'
   get 'companies' => 'companies#index'
 
 
   get 'designs/:id' => 'designs#show'
-  get 'designs/new' => 'designs#create'
   get 'designs' => 'designs#index'
 
 
