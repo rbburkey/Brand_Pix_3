@@ -10,19 +10,53 @@
   margin: 0 auto;
 }*/
 
-.company_option th {
-  /*border-right: 1px solid #C1DAD7;
-  border-bottom: 1px solid #C1DAD7;
-  border-top: 1px solid #C1DAD7;
-  border-left: 1px solid #C1DAD7;*/
-  background: 1px solid #6e6e6c;
-  padding: 6px 6px 6px 0px;
-  color: #6092FF;
+.company_list{
+  padding-top: 250px;
+  padding-bottom: 200px;
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   /* bring your own prefixes */
+   transform: translate(-50%, -50%);
 }
 
 .new_company {
-  align-items: center;
-  padding-top: 150px;
-  width: 70%;
-  margin: 0 auto;
+  padding-top: 250px;
+  padding-bottom: 200px;
+  position: fixed;
+   top: 50%;
+   left: 50%;
+   /* bring your own prefixes */
+   transform: translate(-50%, -50%);
 }
+
+.company_list th {
+  padding: 6px 6px 6px 6px;
+  border-right: 2px solid #963019;
+  border-bottom: 2px solid #963019;
+  border-top: 2px solid #963019;
+  border-left: 2px solid #963019;
+  align-items: center;
+  background-color: #16174f;
+  color: #6092FF;
+}
+
+.company_list td {
+  padding: 20px 20px 20px 20px;
+  border-right: 2px solid #963019;
+  border-bottom: 2px solid #963019;
+  border-top: 2px solid #963019;
+  border-left: 2px solid #963019;
+  align-items: center;
+  background-color: #16174f;
+  color: #6092FF;
+}
+.field {
+   border-right: 1px solid #C1DAD7;
+   border-bottom: 1px solid #C1DAD7;
+   border-top: 1px solid #C1DAD7;
+   border-left: 1px solid #C1DAD7;
+   background: 1px solid #6e6e6c;
+   padding: 6px 6px 6px 12px;
+   color: #6092FF;
+ }
