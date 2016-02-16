@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   get 'home' => "static#home"
+  get 'about' => "static#about"
 
   get 'companies/:id' => 'companies#show'
   get 'companies/:id' => 'designs#create'

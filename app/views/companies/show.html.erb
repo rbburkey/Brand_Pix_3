@@ -1,16 +1,20 @@
+<div class ="design_container">
 <p id="notice"><%= notice %></p>
-
+<div class="show">
 <p>
   <strong>Name:</strong>
   <%= @company.name %>
 </p>
-
+</div>
+<div class="show">
 <p>
   <strong>Category:</strong>
   <%= @company.category %>
 </p>
+</div>
 
-<%= link_to 'New Design', new_design_path %>
+<%= link_to 'New Design', new_design_path %> |
 <%= link_to 'Edit', edit_company_path(@company) %> |
 <%= link_to 'Back', companies_path %>
+</div>
 x
