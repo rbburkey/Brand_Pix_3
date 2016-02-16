@@ -16,10 +16,10 @@
       <title>Scrolling Nav - Start Bootstrap Template</title>
 
       <!-- Bootstrap Core CSS -->
-      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-      <!-- Custom CSS -->
-      <link href="css/scrolling-nav.css" rel="stylesheet">
+      <!-- Bootstrap JS -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,7 +44,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                  <a class="navbar-brand page-scroll" href="#page-top">Brand Pix</a>
               </div>
 
               <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,10 +58,10 @@
                           <a class="page-scroll" href="#about">About</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#services">Services</a>
+                          <a class="page-scroll" href="users/sign_in">Company</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#contact">Contact</a>
+                          <a class="page-scroll" href="users/sign_in">Reviewer</a>
                       </li>
                   </ul>
               </div>
@@ -70,20 +70,8 @@
           <!-- /.container -->
       </nav>
 
-      <!-- Intro Section -->
-      <section id="intro" class="intro-section">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-12">
-                      <h1>Scrolling Nav</h1>
-                      <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                      <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-                  </div>
-              </div>
-          </div>
-      </section>
+    <!--
 
-      <!-- About Section -->
       <section id="about" class="about-section">
           <div class="container">
               <div class="row">
@@ -94,7 +82,7 @@
           </div>
       </section>
 
-      <!-- Services Section -->
+
       <section id="services" class="services-section">
           <div class="container">
               <div class="row">
@@ -103,9 +91,10 @@
                   </div>
               </div>
           </div>
-      </section>
+      </section> -->
 
-      <!-- Contact Section -->
+      <!-- Footer Section -->
+    <footer>
       <section id="contact" class="contact-section">
           <div class="container">
               <div class="row">
@@ -115,6 +104,7 @@
               </div>
           </div>
       </section>
+    </footer>
 
       <!-- jQuery -->
       <script src="js/jquery.js"></script>
@@ -130,7 +120,7 @@
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
-  
+
 <%= yield %>
 
 </body>
