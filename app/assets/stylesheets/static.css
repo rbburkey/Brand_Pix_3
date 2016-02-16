@@ -1,3 +1,6 @@
+#page-top {
+  background-color: #f6f1ed;
+}
 
 #contact {
   background-image: url('https://static.pexels.com/photos/38132/pexels-photo-38132-medium.jpeg');
@@ -7,8 +10,10 @@
 
 #contact h1 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
+  color: #16174f;
+
 }
 
 .about{
