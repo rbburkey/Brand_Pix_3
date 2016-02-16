@@ -10,6 +10,13 @@
   margin: 0 auto;
 }
 
+.design_list {
+  align-items: center;
+  padding-top: 200px;
+  width: 50%;
+  margin: 0 auto;
+}
+
 .field {
    border-right: 1px solid #C1DAD7;
    border-bottom: 1px solid #C1DAD7;
