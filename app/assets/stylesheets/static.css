@@ -16,20 +16,70 @@
   margin-top: 100px;
 }
 
-.about{
-  margin-top: 100px;
+.about {
   margin-left: 100px;
+  margin-top: 100px;
 }
 
-.about h1 {
+.team {
+    margin-left: 100px;
+    align-content: center;
+    margin: auto;
+    padding-left: 100px;
+  }
+
+ .about h1 {
+   color: #963019;
+   font-size: 48px;
+   font-family: "Helvetica Neue", sans-serif;
+   padding-bottom: 10px;
+   padding-top: 60px;
+   /*text-align: justify;*/
+   margin-left: 270px;
+}
+
+  .about p {
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 28px;
+  margin-bottom: 15px;
+  color: #16174f;
+}
+
+.team h3{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 50px;
   font-weight: bold;
-  color: #16174f;
+  color: #963019;
+  margin-left: 680px;
+  padding-top: 50px;
+
 }
 
-.about p {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.team ul li {
+  display: inline-block;
+  padding: 50px 80px 10px 0px;
+  margin-left: 110px;
+}
+
+.team ul li p {
+  margin-left: 25px;
+  position: relative;
+}
+p{
   font-size: 20px;
-  color: #16174f;
+}
+
+.about1{
+  text-align: justify;
+  margin-right: 100px;
+  padding-top: 30px;
+}
+
+.about2{
+  text-align: justify;
+  margin-right: 100px;
+}
+
+.about3{
+  text-align: justify;
+  margin-right: 100px;
 }

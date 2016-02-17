@@ -24,12 +24,17 @@
 .new_company {
   padding-top: 250px;
   padding-bottom: 200px;
-  position: fixed;
+  position: absolute;
    top: 50%;
    left: 50%;
    /* bring your own prefixes */
    transform: translate(-50%, -50%);
 }
+
+.new_company h1 {
+  padding-bottom: 250px;
+}
+
 
 .company_list th {
   padding: 6px 6px 6px 6px;
