@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
-<%= image_tag @design.image.url(:large) %>
+<div class="design_show">
+<p><%= image_tag @design.image.url(:large) %></p>
 
 <p>
   <strong>Product name:</strong>
@@ -11,5 +12,7 @@
   <%= @design.description %>
 </p>
 
-<%= link_to 'Edit', edit_design_path(@design) %> |
-<%= link_to 'All Designs', designs_path %>
+
+<p><%= link_to 'Edit', edit_design_path(@design) %></p>
+<p><%= link_to 'Back', designs_path %></p>
+</div>
