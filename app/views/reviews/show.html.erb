@@ -15,6 +15,10 @@
   <%= @review.rating %>
 </p>
 
+<!-- for reviewers eyes only -->
+<%if !current_user.company%>
 <p><%= link_to 'Edit', edit_review_path(@review) %></p>
+<!-- end -->
+<%end%>
 <p><%= link_to 'Back', reviews_path %></p>
 </div>

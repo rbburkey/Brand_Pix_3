@@ -19,6 +19,9 @@
    <%end%>
  </p>
 
+<!-- for companies eyes only -->
+<%if current_user.company%>
 <p><%= link_to 'Edit', edit_design_path(@design) %></p>
+<%end%>
 <p><%= link_to 'Back', designs_path %></p>
 </div>

@@ -19,8 +19,12 @@
         <td><%= design.product_name %></td>
         <td><%= design.description %></td>
         <td><button type="button" class="btn btn-primary"><%= link_to 'Show', design %></button></td>
+        <!-- for companies eyes only -->
+        <%if current_user.company%>
         <td><button type="button" class="btn btn-primary"><%= link_to 'Edit', edit_design_path(design) %></button></td>
         <td><button type="button" class="btn btn-primary"><%= link_to 'Destroy', design, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+        <!-- ending companies eyes only   -->
+        <%end%>
       </tr>
     <% end %>
   </tbody>

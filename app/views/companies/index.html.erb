@@ -17,14 +17,20 @@
         <td><%= company.name %></td>
         <td><%= company.category %></td>
         <td><%= link_to 'Show', company %></td>
+        <!-- edit and destroy can only be seen if current user is a company -->
+        <%if current_user.company%>
         <td><%= link_to 'Edit', edit_company_path(company) %></td>
         <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <!-- ending the if company statement -->
+        <%end%>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
+<!-- only for companies eyes only -->
+<%if current_user.company%>
 <%= link_to 'New Company', new_company_path %>
+<%end%>
 </div>

@@ -19,8 +19,12 @@
         <td><%= review.title %></td>
         <td><%= review.rating %></td>
         <td><%= link_to 'Show', review %></td>
+        <!-- for reviewers eyes only -->
+        <%if !current_user.company%>
         <td><%= link_to 'Edit', edit_review_path(review) %></td>
         <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <!-- ending reviewers eyes only -->
+        <%end%>
       </tr>
     <% end %>
   </tbody>
@@ -28,5 +32,9 @@
 
 <br>
 
+<!-- for reviewers eyes only hoes -->
+<%if !current_user.company%>
 <%= link_to 'New Review', new_review_path %>
+<!-- the end hoe -->
+<%end%>
 </div>

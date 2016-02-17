@@ -1,5 +1,7 @@
 class DesignsController < ApplicationController
   before_action :set_design, only: [:show, :edit, :update, :destroy]
+  # if current user is a reviewer then they will be redirected to the companies page when visiting those pages
+  before_action :is_reviewer, only: [:create, :edit, :update, :destroy]
 
   # GET /designs
   # GET /designs.json
@@ -7,10 +9,19 @@ class DesignsController < ApplicationController
     @designs = Design.all
   end
 
+
   # GET /designs/1
   # GET /designs/1.json
   def show
   end
+
+  #if not a company redirect to the path, COMMENT OUT THE LINE WHEN WEBSITE WORKING
+    def is_reviewer
+      if !current_user.company?
+        #redirect_to companies_path
+      end
+    end
+
 
   # GET /designs/new
   def new
