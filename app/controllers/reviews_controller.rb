@@ -1,6 +1,7 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: [:show, :edit, :update, :destroy]
-  before_action :is_company, except: [:create, :update, :destroy]
+  before_action :is_reviewer, only: [:show, :index]
+# redirect REVIEWERS??? WHERE TO 
 
 
 
