@@ -66,12 +66,18 @@
  }*/
 
  .contact-section {
-     height: 400px;
+     height: 650px;
      padding-top: 150px;
      text-align: center;
      background: #eee;
  }
 
- .navbar-default {
+ #banner_color.navbar.navbar-default.navbar-fixed-top {
    background-color: #16174f;
  }
+
+
+
+.log_in_out {
+  padding-left: 990px;
+}
