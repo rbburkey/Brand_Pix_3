@@ -20,3 +20,16 @@
   margin-top: 100px;
   margin-left: 100px;
 }
+
+.about h1 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #16174f;
+}
+
+.about p {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  color: #16174f;
+}
