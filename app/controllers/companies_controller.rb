@@ -1,6 +1,6 @@
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :edit, :update, :destroy]
-  before_action :is_reviewer, only: [:show, :index]
+  before_action :is_reviewer, only: [:edit, :update, :destroy]
 
 
 
@@ -10,13 +10,18 @@ class CompaniesController < ApplicationController
     @companies = Company.all
   end
 
-  def is_company
+
+ def is_company
     if current_user.company?
+      #redirect_to #path
     end
   end
 
+
+#if not a company redirect to the path
   def is_reviewer
     if !current_user.company?
+      #redirect_to companies_path
     end
   end
 
