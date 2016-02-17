@@ -50,3 +50,23 @@
    padding: 6px 6px 6px 12px;
    color: #6092FF;
  }
+
+ .design_show {
+   padding-top: 250px;
+   padding-bottom: 200px;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+ }
+
+ .design_show p {
+   border-right: 1px solid #C1DAD7;
+   border-bottom: 1px solid #C1DAD7;
+   border-top: 1px solid #C1DAD7;
+   border-left: 1px solid #C1DAD7;
+   background: 1px solid #6e6e6c;
+   padding: 6px 6px 6px 12px;
+   color: #6092FF;
+ }

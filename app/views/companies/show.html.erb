@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div class="company_show">
 <p>
   <strong>Name:</strong>
   <%= @company.name %>
@@ -10,7 +10,7 @@
   <%= @company.category %>
 </p>
 
-<%= link_to 'New Design', new_design_path %>
-<%= link_to 'Edit', edit_company_path(@company) %> |
-<%= link_to 'Back', companies_path %>
-x
+<p id="link"><%= link_to 'New Design', new_design_path %></p>
+<p id="link"><%= link_to 'Edit', edit_company_path(@company) %></p>
+<p id="link"><%= link_to 'Back', companies_path %></p>
+</div>

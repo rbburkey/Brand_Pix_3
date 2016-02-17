@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div class="review_show">
 <p>
   <strong>Comment:</strong>
   <%= @review.comment %>
@@ -15,5 +15,6 @@
   <%= @review.rating %>
 </p>
 
-<%= link_to 'Edit', edit_review_path(@review) %> |
-<%= link_to 'Back', reviews_path %>
+<p><%= link_to 'Edit', edit_review_path(@review) %></p>
+<p><%= link_to 'Back', reviews_path %></p>
+</div>
