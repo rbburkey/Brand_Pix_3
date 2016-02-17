@@ -1,10 +1,14 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: [:show, :edit, :update, :destroy]
-  before_action :is_reviewer, only: [:show, :index]
-# redirect REVIEWERS??? WHERE TO 
+  # if current user is a company they are unable to post, edit, destroy, create a review
+  before_action :is_company, only: [:destroy, :create, :update]
 
 
-
+  def is_company
+    if current_user.company?
+      redirect_to reviews_path
+    end
+  end
 
 
   # GET /reviews
@@ -27,14 +31,6 @@ class ReviewsController < ApplicationController
   def edit
   end
 
-  def is_company
-    if current_user.company?
-    end
-  end
-
-  def is_reviewer
-    if !current_user.company?
-    end
 
 
   # POST /reviews
@@ -87,5 +83,4 @@ class ReviewsController < ApplicationController
     def review_params
       params.require(:review).permit(:comment, :title, :rating)
     end
-end
 end

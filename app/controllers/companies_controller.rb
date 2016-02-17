@@ -1,5 +1,6 @@
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :edit, :update, :destroy]
+  # if current user is not a company then they will be redirected on the following pages:
   before_action :is_reviewer, only: [:edit, :update, :destroy]
 
 
@@ -11,17 +12,10 @@ class CompaniesController < ApplicationController
   end
 
 
- def is_company
-    if current_user.company?
-      #redirect_to #path
-    end
-  end
-
-
-#if not a company redirect to the path
+#if not a company redirect to the path COMMENT OUT THE MIDDLE LINE WHEN READY TO ADD FEAUTE. IT WORKS, PROMISE
   def is_reviewer
     if !current_user.company?
-      #redirect_to companies_path
+      # redirect_to companies_path
     end
   end
 
