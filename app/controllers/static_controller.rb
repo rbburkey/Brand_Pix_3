@@ -1,10 +1,10 @@
 class StaticController < ApplicationController
 
 def home
-  # if user_signed_in?
+  # if current_user.signed_in?
   #   redirect_to_companies_path
   # else
-  #   redirect_to_new_user_session_path
+  #   redirect_to_new_useuser submitr_session_path
   # end
 end
 end

@@ -1,11 +1,26 @@
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+  before_action :is_reviewer, only: [:show, :index]
+
+
+
   # GET /companies
   # GET /companies.json
   def index
     @companies = Company.all
   end
+
+  def is_company
+    if current_user.company?
+    end
+  end
+
+  def is_reviewer
+    if !current_user.company?
+    end
+  end
+
+
 
   # GET /companies/1
   # GET /companies/1.json

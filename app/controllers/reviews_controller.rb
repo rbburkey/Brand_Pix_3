@@ -1,7 +1,9 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: [:show, :edit, :update, :destroy]
-  # before_action :companyz, except [: ]
-  #authenticate that is a company
+  before_action :is_company, except: [:create, :update, :destroy]
+
+
+
 
 
   # GET /reviews
@@ -24,9 +26,15 @@ class ReviewsController < ApplicationController
   def edit
   end
 
-  def companyz
-
+  def is_company
+    if current_user.company?
+    end
   end
+
+  def is_reviewer
+    if !current_user.company?
+    end
+
 
   # POST /reviews
   # POST /reviews.json
@@ -78,4 +86,5 @@ class ReviewsController < ApplicationController
     def review_params
       params.require(:review).permit(:comment, :title, :rating)
     end
+end
 end
