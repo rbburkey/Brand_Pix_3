@@ -16,12 +16,13 @@
       <tr>
         <td><%= company.name %></td>
         <td><%= company.category %></td>
-        <%if !current_user.company%>
+        <%if !current_user.company %>
         <td><%= link_to 'Show', company %></td>
-        <%else%>
+        <% else %>
+        <td><%= link_to 'Show', company %></td>
         <td><%= link_to 'Edit', edit_company_path(company) %></td>
         <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <%end%>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
