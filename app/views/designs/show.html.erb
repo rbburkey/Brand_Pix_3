@@ -10,9 +10,21 @@
 <p>
   <strong>Description:</strong>
   <%= @design.description %>
+
 </p>
 
 
+<% @design.reviews.each do |reviewz|%>
+   <%=reviewz.rating %>
+   <%end%>
+
+
+<!-- for companies eyes only -->
+<%if current_user.company%>
 <p><%= link_to 'Edit', edit_design_path(@design) %></p>
+<p><%= link_to 'Reviews', reviews_path(@reviews) %></p>
+<%else%>
+<p><%= link_to 'Review Design', reviews_path(@design) %></p>
 <p><%= link_to 'Back', designs_path %></p>
+<%end%>
 </div>

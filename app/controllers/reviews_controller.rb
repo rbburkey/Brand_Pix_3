@@ -1,7 +1,14 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: [:show, :edit, :update, :destroy]
-  # before_action :companyz, except [: ]
-  #authenticate that is a company
+  # if current user is a company they are unable to post, edit, destroy, create a review
+  before_action :is_company, only: [:destroy, :create, :update]
+
+
+  def is_company
+    if current_user.company?
+      redirect_to reviews_path
+    end
+  end
 
 
   # GET /reviews
@@ -24,9 +31,7 @@ class ReviewsController < ApplicationController
   def edit
   end
 
-  def companyz
 
-  end
 
   # POST /reviews
   # POST /reviews.json

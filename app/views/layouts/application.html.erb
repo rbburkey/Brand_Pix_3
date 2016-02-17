@@ -58,22 +58,34 @@
                           <a class="page-scroll" href="/about">About</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="/users/sign_in">Company</a>
+
+                          <a class="page-scroll" href="/companies/new">Company</a>
+
                       </li>
                       <li>
-                          <a class="page-scroll" href="/users/sign_in">Reviewer</a>
+                        <!-- CHANGE THIS -->
+                          <a class="page-scroll" href="/reviews/new">Review</a>
+
                       </li>
                       <div class="log_in_out">
-                      <% if user_signed_in? %>
-                      <li>
-                        <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-                      </li>
-                      <% else %>
-                      <li>
-                        <%= link_to('Login', new_user_session_path)  %>
-                      </li>
-                      <% end %>
-                    </div>
+                       <% if user_signed_in? %>
+                       <li>
+                         <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                       </li>
+                       <% else %>
+                       <li>
+                         <%= link_to('Login', new_user_session_path) %>
+                       </li>
+
+                       <li>or<//li>
+
+                         <li>
+                       <%= link_to('Sign Up', new_user_registration_path)%>
+                       </li>
+
+                       <% end %>
+                     </div>
+
                   </ul>
               </div>
               <!-- /.navbar-collapse -->
@@ -81,9 +93,10 @@
           <!-- /.container -->
       </nav>
 
-    <!--
 
-      <section id="about" class="about-section">
+
+
+    <!--  <section id="about" class="about-section">
           <div class="container">
               <div class="row">
                   <div class="col-lg-12">
