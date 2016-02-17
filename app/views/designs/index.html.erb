@@ -18,7 +18,7 @@
         <td><%= image_tag design.image.url(:thumb) %></td>
         <td><%= design.product_name %></td>
         <td><%= design.description %></td>
-        <td><button type="button" class="btn btn-primary"><%= link_to 'Show', design %></button></td>
+        <td><button type="button" class="btn btn-primary"><%= link_to 'Show/Review', design %></button></td>
         <!-- for companies eyes only -->
         <%if current_user.company%>
         <td><button type="button" class="btn btn-primary"><%= link_to 'Edit', edit_design_path(design) %></button></td>
@@ -31,6 +31,7 @@
 </table>
 
 <br>
-
+<%if current_user.company%>
 <%= link_to 'New Design', new_design_path %>
+<%end%>
 </div>
