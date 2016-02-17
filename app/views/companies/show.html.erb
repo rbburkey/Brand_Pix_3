@@ -10,12 +10,19 @@
   <%= @company.category %>
 </p>
 
+
+
+
+<p>
 <% @company.designs.each do |hellohoez|%>
    <%=hellohoez.rating %>
    <%end%>
  </p>
 
+<%if current_user.company%>
 <p id="link"><%= link_to 'New Design', new_design_path %></p>
+
 <p id="link"><%= link_to 'Edit', edit_company_path(@company) %></p>
+<%end%>
 <p id="link"><%= link_to 'Back', companies_path %></p>
 </div>
