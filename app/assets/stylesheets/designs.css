@@ -22,10 +22,10 @@
 
 .design_list th {
   padding: 6px 6px 6px 6px;
-  border-right: 2px solid #963019;
-  border-bottom: 2px solid #963019;
-  border-top: 2px solid #963019;
-  border-left: 2px solid #963019;
+  border-right: 2px solid #667467;
+  border-bottom: 2px solid #667467;
+  border-top: 2px solid #667467;
+  border-left: 2px solid #667467;
   align-items: center;
   background-color: #16174f;
   color: #6092FF;
@@ -33,10 +33,10 @@
 
 .design_list td {
   padding: 20px 20px 20px 20px;
-  border-right: 2px solid #963019;
-  border-bottom: 2px solid #963019;
-  border-top: 2px solid #963019;
-  border-left: 2px solid #963019;
+  border-right: 2px solid #667467;
+  border-bottom: 2px solid #667467;
+  border-top: 2px solid #667467;
+  border-left: 2px solid #667467;
   align-items: center;
   background-color: #16174f;
   color: #6092FF;
